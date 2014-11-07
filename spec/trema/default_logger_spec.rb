@@ -23,10 +23,10 @@ require "trema"
 
 
 module Trema
-  describe Logger do
+  describe DefaultLogger do
     subject {
       class LoggingObject
-        include Trema::Logger
+        include Trema::DefaultLogger
       end
       LoggingObject.new
     }

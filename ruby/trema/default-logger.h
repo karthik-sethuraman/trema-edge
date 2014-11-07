@@ -1,5 +1,5 @@
 /*
- * Logger class.
+ * DefaultLogger class.
  *
  * Copyright (C) 2008-2013 NEC Corporation
  *
@@ -18,20 +18,20 @@
  */
 
 
-#ifndef LOGGER_H
-#define LOGGER_H
+#ifndef DEFAULT_LOGGER_H
+#define DEFALT_LOGGER_H
 
 
 #include "ruby.h"
 
 
-extern VALUE mLogger;
+extern VALUE mDefaultLogger;
 
 
-void Init_logger( void );
+void Init_default_logger( void );
 
 
-#endif // LOGGER_H
+#endif // DEFAULT_LOGGER_H
 
 
 /*

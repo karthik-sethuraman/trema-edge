@@ -19,7 +19,7 @@
 
 
 #include "controller.h"
-#include "logger.h"
+#include "default-logger.h"
 #include "message-handler.h"
 #include "actions.h"
 #include "instructions.h"
@@ -41,7 +41,7 @@ Init_trema( void ) {
   rb_require( "trema/path" );
 
   Init_controller();
-  Init_logger();
+  Init_default_logger();
   Init_message_const();
   Init_actions();
   Init_instructions();

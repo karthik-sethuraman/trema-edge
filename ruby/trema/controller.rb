@@ -17,7 +17,7 @@
 
 
 require_relative "app"
-require_relative "logger"
+require_relative "default-logger"
 require_relative "monkey-patch/integer"
 require_relative "monkey-patch/string"
 require_relative "timers"
@@ -30,11 +30,10 @@ module Trema
   # @abstract The base class of Trema controller. Subclass and override handlers to implement a custom OpenFlow controller.
   #
   class Controller < App
-    include Logger
-    include Timers
+    include DefaultLogger
     include MessageHelper
     include MessageHandler
-
+    include Timers
 
     #
     # @private Just a placeholder for YARD.
